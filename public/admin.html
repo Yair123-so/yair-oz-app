@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yair Oz | Admin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="section-header">
+        <span class="eyebrow">אזור ניהול</span>
+        <h1 class="section-title">כניסת אדמין וניהול תורים</h1>
+        <p class="section-subtitle">רק אדמין יכול לצפות ולמחוק תורים.</p>
+      </div>
+
+      <div class="booking-panel" style="margin-bottom: 20px; padding: 20px;">
+        <form id="loginForm" class="booking-form">
+          <div class="form-group">
+            <label for="password">סיסמת אדמין</label>
+            <input type="password" id="password" placeholder="הכנס סיסמה" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">כניסה</button>
+        </form>
+
+        <div id="adminStatus" class="form-message" style="margin-top: 12px;"></div>
+      </div>
+
+      <div class="booking-panel" style="padding: 20px;">
+        <h2 class="section-title" style="font-size: 2rem;">כל התורים</h2>
+        <div id="appointments">
+          <div class="empty-state">
+            <p>עדיין לא נטענו תורים.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

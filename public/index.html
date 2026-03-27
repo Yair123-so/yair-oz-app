@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yair Oz | קביעת תורים</title>
+  <meta name="description" content="אפליקציית קביעת תורים של Yair Oz. קבעו תור למספרה בקלות, במהירות ובנראות יוקרתית ונוחה לטלפון." />
+  <meta name="theme-color" content="#0f1115" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Yair Oz" />
+  <meta property="og:title" content="Yair Oz | קביעת תורים" />
+  <meta property="og:description" content="קביעת תורים למספרה של Yair Oz." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="חזרה לראש הדף">
+        <div class="brand-mark">
+          <i class="fa-solid fa-scissors"></i>
+        </div>
+        <div class="brand-text">
+          <p class="brand-title">Yair Oz</p>
+          <p class="brand-subtitle">קביעת תורים למספרה</p>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="ניווט ראשי">
+        <a href="#about">ראשי</a>
+        <a href="#services">שירותים</a>
+        <a href="#booking">קביעת תור</a>
+        <a href="#myAppointments">התורים שלי</a>
+        <a href="#contact">יצירת קשר</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-secondary header-call" href="tel:0500000000" aria-label="חיוג עכשיו">
+          <i class="fa-solid fa-phone"></i>
+          <span>050-0000000</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mobileMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="container mobile-menu-inner">
+        <nav class="mobile-links" aria-label="ניווט מובייל">
+          <a href="#about">ראשי</a>
+          <a href="#services">שירותים</a>
+          <a href="#booking">קביעת תור</a>
+          <a href="#myAppointments">התורים שלי</a>
+          <a href="#contact">יצירת קשר</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section" id="about">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-kicker">
+            <i class="fa-solid fa-star"></i>
+            <span>סטייל מדויק. חוויית שירות נקייה. קביעת תור בלחיצה.</span>
+          </div>
+
+          <h1 class="hero-title">
+            Yair Oz
+            <span class="accent">Barber Booking</span>
+          </h1>
+
+          <p class="hero-text">
+            אפליקציית קביעת תורים מודרנית למספרה.
+            בוחרים שירות, תאריך, שעה ושולחים בקשה במהירות מתוך הטלפון.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>לקביעת תור</span>
+            </a>
+
+            <a class="btn btn-secondary" href="#services">
+              <i class="fa-solid fa-list"></i>
+              <span>לצפייה בשירותים</span>
+            </a>
+          </div>
+
+          <div class="hero-points">
+            <div class="point">
+              <i class="fa-solid fa-check"></i>
+              <span>ממשק מהיר ונוח לטלפון</span>
+            </div>
+            <div class="point">
+              <i class="fa-solid fa-check"></i>
+              <span>מראה יוקרתי וקלאסי</span>
+            </div>
+            <div class="point">
+              <i class="fa-solid fa-check"></i>
+              <span>שמירת תורים באפליקציה</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="hero-overlay"></div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>קביעת תורים פשוטה</strong>
+              <span>יום, שעה, שירות ופרטי לקוח במקום אחד</span>
+            </div>
+            <div class="stat-card">
+              <strong>עיצוב מקצועי</strong>
+              <span>נראות נקייה, גברית, מודרנית ויוקרתית</span>
+            </div>
+            <div class="stat-card">
+              <strong>PWA</strong>
+              <span>אפשר להוסיף למסך הבית כמו אפליקציה</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">
+            <i class="fa-solid fa-scissors"></i>
+            השירותים שלנו
+          </span>
+          <h2 class="section-title">בחר את השירות שמתאים לך</h2>
+          <p class="section-subtitle">
+            אפשר לשנות את השמות, המחירים והזמנים ישירות בקוד מתי שתרצה.
+          </p>
+        </div>
+
+        <div class="cards-3">
+          <article class="card reveal">
+            <div class="card-icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <h3 class="card-title">תספורת</h3>
+            <p class="card-text">תספורת נקייה, מדויקת ומותאמת לסגנון שלך.</p>
+            <div class="service-meta">משך זמן: 45 דקות</div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <i class="fa-solid fa-user-pen"></i>
+            </div>
+            <h3 class="card-title">תספורת + זקן</h3>
+            <p class="card-text">שילוב מלא למראה חד, מוקפד ומסודר.</p>
+            <div class="service-meta">משך זמן: 60 דקות</div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="card-title">פייד / עיצוב מיוחד</h3>
+            <p class="card-text">למי שרוצה גימור מודגש וסטייל מודרני.</p>
+            <div class="service-meta">משך זמן: 50 דקות</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <div class="container booking-grid">
+        <div class="booking-panel reveal">
+          <div class="section-header small">
+            <span class="eyebrow">
+              <i class="fa-solid fa-calendar-days"></i>
+              קביעת תור
+            </span>
+            <h2 class="section-title">תיאום תור בקלות</h2>
+            <p class="section-subtitle">
+              מלא את הפרטים, בחר יום ושעה ולחץ על שמירת תור.
+            </p>
+          </div>
+
+          <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+              <label for="fullName">שם מלא</label>
+              <input type="text" id="fullName" name="fullName" placeholder="הכנס שם מלא" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">טלפון</label>
+              <input type="tel" id="phone" name="phone" placeholder="050-0000000" required />
+            </div>
+
+            <div class="form-group">
+              <label for="service">שירות</label>
+              <select id="service" name="service" required>
+                <option value="">בחר שירות</option>
+                <option value="תספורת">תספורת</option>
+                <option value="תספורת + זקן">תספורת + זקן</option>
+                <option value="פייד / עיצוב מיוחד">פייד / עיצוב מיוחד</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">תאריך</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+
+              <div class="form-group">
+                <label for="time">שעה</label>
+                <select id="time" name="time" required>
+                  <option value="">בחר שעה</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">הערות</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="הערות נוספות, בקשה מיוחדת, סגנון וכדומה"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-check"></i>
+              <span>שמור תור</span>
+            </button>
+
+            <button type="button" id="sendWhatsappBtn" class="btn btn-whatsapp btn-full">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>שלח בוואטסאפ</span>
+            </button>
+
+            <div id="formMessage" class="form-message" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="info-panel reveal">
+          <div class="info-card">
+            <h3>שעות עבודה לדוגמה</h3>
+            <ul class="info-list">
+              <li>ראשון - חמישי: 10:00 עד 20:00</li>
+              <li>שישי: 09:00 עד 15:00</li>
+              <li>שבת: סגור</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h3>מה חשוב לדעת</h3>
+            <ul class="info-list">
+              <li>לא ניתן לקבוע שעה שכבר נתפסה</li>
+              <li>התורים נשמרים במכשיר</li>
+              <li>אפשר למחוק תור מהרשימה למטה</li>
+            </ul>
+          </div>
+
+          <div class="info-card premium">
+            <h3>Yair Oz</h3>
+            <p>מספרה עם סטייל נקי, גישה מקצועית וחוויית שירות מדויקת.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="myAppointments">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            התורים שלי
+          </span>
+          <h2 class="section-title">רשימת התורים שנשמרו</h2>
+          <p class="section-subtitle">
+            כל תור שתשמור יוצג כאן אוטומטית.
+          </p>
+        </div>
+
+        <div id="appointmentsList" class="appointments-list reveal">
+          <div class="empty-state">
+            <i class="fa-regular fa-calendar"></i>
+            <p>עדיין לא נשמרו תורים.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2>רוצה ליצור קשר ישירות?</h2>
+          <p>
+            אפשר להתקשר או לשלוח הודעת וואטסאפ ישירות מתוך האפליקציה.
+          </p>
+
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="tel:0500000000">
+              <i class="fa-solid fa-phone"></i>
+              <span>התקשר עכשיו</span>
+            </a>
+
+            <a
+              class="btn btn-whatsapp"
+              href="https://wa.me/972500000000?text=%D7%A9%D7%9C%D7%95%D7%9D%20Yair%20Oz%2C%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>שלח הודעה בוואטסאפ</span>
+            </a>
+          </div>
+
+          <div class="phone-badge">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>050-0000000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-main">
+        <strong>Yair Oz</strong>
+        <span>קביעת תורים למספרה</span>
+        <span>טלפון: 050-0000000</span>
+      </div>
+      <div class="footer-copy">
+        © <span id="year"></span> כל הזכויות שמורות
+      </div>
+    </div>
+  </footer>
+
+  <a
+    class="floating-wa"
+    href="https://wa.me/972500000000?text=%D7%A9%D7%9C%D7%95%D7%9D%20Yair%20Oz%2C%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8"
+    target="_blank"
+    rel="noopener"
+    aria-label="פתיחת וואטסאפ"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
