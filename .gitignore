@@ -1,2 +1,5 @@
 .env
 node_modules
+server/database.sqlite
+public/package-lock.json
+public/package.json
