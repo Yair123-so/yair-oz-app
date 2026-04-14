@@ -2,43 +2,93 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yair Oz | Admin</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Yair Oz Barber | Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css?v=60" />
 </head>
 <body>
-  <main class="section">
-    <div class="container" style="max-width: 900px;">
-      <div class="section-header">
-        <span class="eyebrow">אזור ניהול</span>
-        <h1 class="section-title">כניסת אדמין וניהול תורים</h1>
-        <p class="section-subtitle">רק אדמין יכול לצפות ולמחוק תורים.</p>
+  <main class="admin-shell">
+    <div class="admin-wrap">
+      <div class="admin-topbar">
+        <div>
+          <span class="eyebrow">אזור ניהול</span>
+          <h1 class="admin-page-title">ניהול תורים וזמינות</h1>
+          <p class="admin-page-subtitle">צפייה בתורים, פתיחת ימים ושעות, העתקת זמינות וניהול שוטף.</p>
+        </div>
+
+        <a href="/index.html" class="btn btn-whatsapp admin-back-btn">חזרה לאתר</a>
       </div>
 
-      <div class="booking-panel" style="margin-bottom: 20px; padding: 20px;">
+      <section class="admin-card admin-login-card">
         <form id="loginForm" class="booking-form">
           <div class="form-group">
             <label for="password">סיסמת אדמין</label>
-            <input type="password" id="password" placeholder="הכנס סיסמה" required />
+            <input
+              type="password"
+              id="password"
+              placeholder="הכנס סיסמה"
+              autocomplete="current-password"
+              required
+            />
           </div>
 
-          <button type="submit" class="btn btn-primary btn-full">כניסה</button>
+          <div class="admin-login-actions">
+            <button type="submit" class="btn btn-primary">כניסה</button>
+            <button id="logoutBtn" type="button" class="btn btn-secondary">התנתק</button>
+          </div>
+
+          <div id="adminStatus" class="form-message"></div>
         </form>
+      </section>
 
-        <div id="adminStatus" class="form-message" style="margin-top: 12px;"></div>
-      </div>
-
-      <div class="booking-panel" style="padding: 20px;">
-        <h2 class="section-title" style="font-size: 2rem;">כל התורים</h2>
-        <div id="appointments">
-          <div class="empty-state">
-            <p>עדיין לא נטענו תורים.</p>
+      <div id="adminSection" class="admin-content" style="display:none;">
+        <section class="admin-card">
+          <div class="admin-section-head">
+            <div>
+              <h2 class="admin-section-title">ניהול זמינות</h2>
+              <p class="admin-section-subtitle">בחר תאריך, פתח וסגור שעות, או העתק יום ליום אחר.</p>
+            </div>
           </div>
-        </div>
+
+          <div class="admin-grid admin-grid-2">
+            <div class="form-group">
+              <label for="availabilityDate">תאריך לניהול</label>
+              <input type="date" id="availabilityDate" />
+            </div>
+
+            <div class="form-group">
+              <label for="copyTargetDate">העתק לתאריך אחר</label>
+              <input type="date" id="copyTargetDate" />
+            </div>
+          </div>
+
+          <div class="admin-toolbar">
+            <button type="button" id="openAllBtn" class="btn btn-primary">פתח את כל היום</button>
+            <button type="button" id="closeAllBtn" class="btn btn-secondary">סגור את כל היום</button>
+            <button type="button" id="resetAllBtn" class="btn btn-secondary">אפס הכול</button>
+            <button type="button" id="copyDayBtn" class="btn btn-whatsapp">העתק יום ליום אחר</button>
+          </div>
+
+          <div id="availabilityGrid" class="availability-grid admin-availability-grid"></div>
+        </section>
+
+        <section class="admin-card">
+          <div class="admin-section-head">
+            <div>
+              <h2 class="admin-section-title">כל התורים</h2>
+              <p class="admin-section-subtitle">כאן תראה את כל ההזמנות שבוצעו במערכת.</p>
+            </div>
+          </div>
+
+          <div id="appointments" class="admin-appointments-list"></div>
+        </section>
       </div>
     </div>
   </main>
 
-  <script src="admin.js"></script>
+  <script src="/admin.js?v=60"></script>
 </body>
 </html>

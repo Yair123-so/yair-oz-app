@@ -1,331 +1,213 @@
+index.html
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yair Oz | קביעת תורים</title>
-  <meta name="description" content="אפליקציית קביעת תורים של Yair Oz. קבעו תור למספרה בקלות, במהירות ובנראות יוקרתית ונוחה לטלפון." />
-  <meta name="theme-color" content="#0f1115" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="Yair Oz" />
-  <meta property="og:title" content="Yair Oz | קביעת תורים" />
-  <meta property="og:description" content="קביעת תורים למספרה של Yair Oz." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="he_IL" />
-
-  <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="apple-touch-icon" href="icon-192.png" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  <title>Yair Oz Barber | קביעת תורים</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="קביעת תורים מהירה למספרת Yair Oz Barber" />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css?v=31" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#top" class="brand" aria-label="חזרה לראש הדף">
-        <div class="brand-mark">
-          <i class="fa-solid fa-scissors"></i>
-        </div>
+    <div class="header-container">
+      <a href="#top" class="brand" aria-label="Yair Oz Barber">
+        <div class="brand-mark">YO</div>
         <div class="brand-text">
-          <p class="brand-title">Yair Oz</p>
-          <p class="brand-subtitle">קביעת תורים למספרה</p>
+          <p class="brand-title">Yair Oz Barber</p>
+          <p class="brand-subtitle">קביעת תורים</p>
         </div>
       </a>
 
-      <nav class="nav" aria-label="ניווט ראשי">
-        <a href="#about">ראשי</a>
-        <a href="#services">שירותים</a>
-        <a href="#booking">קביעת תור</a>
-        <a href="#myAppointments">התורים שלי</a>
-        <a href="#contact">יצירת קשר</a>
+      <nav class="desktop-nav" aria-label="ניווט ראשי">
+        <a href="#booking" class="nav-link">קביעת תור</a>
+        <a href="#contact" class="nav-link">צור קשר</a>
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn-secondary header-call" href="tel:0500000000" aria-label="חיוג עכשיו">
-          <i class="fa-solid fa-phone"></i>
-          <span>050-0000000</span>
+        <a class="header-phone" href="tel:0556873544">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>055-687-3544</span>
         </a>
 
-        <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mobileMenu">
-          <i class="fa-solid fa-bars"></i>
+        <button id="navToggle" class="nav-toggle" type="button" aria-label="פתח תפריט" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </button>
       </div>
     </div>
 
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="container mobile-menu-inner">
-        <nav class="mobile-links" aria-label="ניווט מובייל">
-          <a href="#about">ראשי</a>
-          <a href="#services">שירותים</a>
-          <a href="#booking">קביעת תור</a>
-          <a href="#myAppointments">התורים שלי</a>
-          <a href="#contact">יצירת קשר</a>
-        </nav>
+    <div id="mobileMenu" class="mobile-menu">
+      <div class="mobile-menu-inner mobile-links">
+        <a href="#booking">קביעת תור</a>
+        <a href="#contact">צור קשר</a>
+        <a href="tel:0556873544" class="mobile-phone">055-687-3544</a>
       </div>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero section" id="about">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="hero-kicker">
-            <i class="fa-solid fa-star"></i>
-            <span>סטייל מדויק. חוויית שירות נקייה. קביעת תור בלחיצה.</span>
-          </div>
+    <section class="hero">
+      <div class="hero-bg-effects">
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-grain"></div>
+      </div>
 
-          <h1 class="hero-title">
-            Yair Oz
-            <span class="accent">Barber Booking</span>
-          </h1>
-
+      <div class="hero-container">
+        <div class="hero-copy animate-slide-up">
+          <span class="hero-kicker">קובעים תור בכמה שניות</span>
+          <h1 class="hero-title">קביעת תורים מהירה <span class="accent">ללא בלגן</span></h1>
           <p class="hero-text">
-            אפליקציית קביעת תורים מודרנית למספרה.
-            בוחרים שירות, תאריך, שעה ושולחים בקשה במהירות מתוך הטלפון.
+            בוחרים סוג תספורת, בוחרים יום ושעה, ושולחים תור.
+            לשירותי VIP והגעה לבית הלקוח נדרש תיאום מראש בוואטסאפ.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#booking">
-              <i class="fa-solid fa-calendar-check"></i>
-              <span>לקביעת תור</span>
-            </a>
-
-            <a class="btn btn-secondary" href="#services">
-              <i class="fa-solid fa-list"></i>
-              <span>לצפייה בשירותים</span>
-            </a>
+            <a href="#booking" class="btn btn-primary btn-lg">קבע תור עכשיו</a>
+            <a href="https://wa.me/972556873544" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">וואטסאפ</a>
           </div>
 
           <div class="hero-points">
-            <div class="point">
-              <i class="fa-solid fa-check"></i>
-              <span>ממשק מהיר ונוח לטלפון</span>
-            </div>
-            <div class="point">
-              <i class="fa-solid fa-check"></i>
-              <span>מראה יוקרתי וקלאסי</span>
-            </div>
-            <div class="point">
-              <i class="fa-solid fa-check"></i>
-              <span>שמירת תורים באפליקציה</span>
-            </div>
+            <div class="point"><span>תורים לפי זמינות מעודכנת</span></div>
+            <div class="point"><span>קביעה מהירה מהטלפון</span></div>
+            <div class="point"><span>תיאום VIP והגעה לבית בוואטסאפ</span></div>
           </div>
         </div>
 
-        <div class="hero-card reveal">
-          <div class="hero-overlay"></div>
-          <div class="hero-stats">
-            <div class="stat-card">
-              <strong>קביעת תורים פשוטה</strong>
-              <span>יום, שעה, שירות ופרטי לקוח במקום אחד</span>
-            </div>
-            <div class="stat-card">
-              <strong>עיצוב מקצועי</strong>
-              <span>נראות נקייה, גברית, מודרנית ויוקרתית</span>
-            </div>
-            <div class="stat-card">
-              <strong>PWA</strong>
-              <span>אפשר להוסיף למסך הבית כמו אפליקציה</span>
-            </div>
+        <div class="hero-visual animate-slide-up-delay">
+          <div class="hero-card-stack">
+            <div class="hero-stat-card"><div class="stat-icon">✓</div><div><strong>קביעת תור מהירה</strong><span>פשוט לבחור יום, שעה וסוג תספורת</span></div></div>
+            <div class="hero-stat-card"><div class="stat-icon">✓</div><div><strong>זמינות ברורה</strong><span>רואים מה פתוח ומה סגור בלי לנחש</span></div></div>
+            <div class="hero-stat-card accent-card"><div class="stat-icon">✦</div><div><strong>שירות מקצועי</strong><span>ניסיון של שנים בתספורות גברים</span></div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">
-            <i class="fa-solid fa-scissors"></i>
-            השירותים שלנו
-          </span>
-          <h2 class="section-title">בחר את השירות שמתאים לך</h2>
-          <p class="section-subtitle">
-            אפשר לשנות את השמות, המחירים והזמנים ישירות בקוד מתי שתרצה.
-          </p>
+    <section class="booking-section" id="booking">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="eyebrow">קביעת תור</span>
+          <h2 class="section-title">בחר תספורת וקבע תור</h2>
+          <p class="section-subtitle">בחר את סוג התספורת, מלא פרטים, בחר תאריך ושעה — והתור שלך נקבע.</p>
         </div>
 
-        <div class="cards-3">
-          <article class="card reveal">
-            <div class="card-icon">
-              <i class="fa-solid fa-user"></i>
-            </div>
-            <h3 class="card-title">תספורת</h3>
-            <p class="card-text">תספורת נקייה, מדויקת ומותאמת לסגנון שלך.</p>
-            <div class="service-meta">משך זמן: 45 דקות</div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">
-              <i class="fa-solid fa-user-pen"></i>
-            </div>
-            <h3 class="card-title">תספורת + זקן</h3>
-            <p class="card-text">שילוב מלא למראה חד, מוקפד ומסודר.</p>
-            <div class="service-meta">משך זמן: 60 דקות</div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">
-              <i class="fa-solid fa-wand-magic-sparkles"></i>
-            </div>
-            <h3 class="card-title">פייד / עיצוב מיוחד</h3>
-            <p class="card-text">למי שרוצה גימור מודגש וסטייל מודרני.</p>
-            <div class="service-meta">משך זמן: 50 דקות</div>
-          </article>
+        <div class="booking-steps">
+          <div class="step-item active"><div class="step-number">1</div><span class="step-label">סוג שירות</span></div>
+          <div class="step-item"><div class="step-number">2</div><span class="step-label">פרטים אישיים</span></div>
+          <div class="step-item"><div class="step-number">3</div><span class="step-label">תאריך</span></div>
+          <div class="step-item"><div class="step-number">4</div><span class="step-label">שעה ואישור</span></div>
         </div>
-      </div>
-    </section>
 
-    <section class="section booking-section" id="booking">
-      <div class="container booking-grid">
-        <div class="booking-panel reveal">
-          <div class="section-header small">
-            <span class="eyebrow">
-              <i class="fa-solid fa-calendar-days"></i>
-              קביעת תור
-            </span>
-            <h2 class="section-title">תיאום תור בקלות</h2>
-            <p class="section-subtitle">
-              מלא את הפרטים, בחר יום ושעה ולחץ על שמירת תור.
-            </p>
-          </div>
-
-          <form id="bookingForm" class="booking-form">
-            <div class="form-group">
-              <label for="fullName">שם מלא</label>
-              <input type="text" id="fullName" name="fullName" placeholder="הכנס שם מלא" required />
-            </div>
-
-            <div class="form-group">
-              <label for="phone">טלפון</label>
-              <input type="tel" id="phone" name="phone" placeholder="050-0000000" required />
-            </div>
-
-            <div class="form-group">
-              <label for="service">שירות</label>
-              <select id="service" name="service" required>
-                <option value="">בחר שירות</option>
-                <option value="תספורת">תספורת</option>
-                <option value="תספורת + זקן">תספורת + זקן</option>
-                <option value="פייד / עיצוב מיוחד">פייד / עיצוב מיוחד</option>
-              </select>
-            </div>
-
-            <div class="form-row">
+        <div class="booking-grid">
+          <div class="booking-panel">
+            <form id="bookingForm" class="booking-form" novalidate>
               <div class="form-group">
-                <label for="date">תאריך</label>
-                <input type="date" id="date" name="date" required />
-              </div>
-
-              <div class="form-group">
-                <label for="time">שעה</label>
-                <select id="time" name="time" required>
-                  <option value="">בחר שעה</option>
+                <label for="service">סוג תספורת</label>
+                <div class="service-cards" id="serviceCards">
+                  <button type="button" class="service-card" data-value="תספורת ראש - 70 ₪"><div class="service-card-top"><span class="service-name">תספורת ראש</span></div><div class="service-card-bottom"><span class="service-price">70 ₪</span><span class="service-duration">30 דק׳</span></div></button>
+                  <button type="button" class="service-card" data-value="תספורת ראש+זקן - 80 ₪"><div class="service-card-top"><span class="service-name">תספורת ראש+זקן</span></div><div class="service-card-bottom"><span class="service-price">80 ₪</span><span class="service-duration">40 דק׳</span></div></button>
+                  <button type="button" class="service-card special" data-value="תספורת VIP - 100 ₪"><div class="service-card-top"><span class="service-name">תספורת VIP</span><span class="service-badge">VIP</span></div><div class="service-card-bottom"><span class="service-price">100 ₪</span><span class="service-duration">60 דק׳</span></div></button>
+                  <button type="button" class="service-card special" data-value="תספורת הגעה לבית הלקוח - 200 ₪"><div class="service-card-top"><span class="service-name">הגעה לבית הלקוח</span><span class="service-badge">בית</span></div><div class="service-card-bottom"><span class="service-price">200 ₪</span><span class="service-duration">60 דק׳</span></div></button>
+                </div>
+                <select id="service" name="service" required hidden>
+                  <option value="">בחר סוג תספורת</option>
+                  <option value="תספורת ראש - 70 ₪">תספורת ראש - 70 ₪</option>
+                  <option value="תספורת ראש+זקן - 80 ₪">תספורת ראש+זקן - 80 ₪</option>
+                  <option value="תספורת VIP - 100 ₪">תספורת VIP - 100 ₪</option>
+                  <option value="תספורת הגעה לבית הלקוח - 200 ₪">תספורת הגעה לבית הלקוח - 200 ₪</option>
                 </select>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="notes">הערות</label>
-              <textarea id="notes" name="notes" rows="4" placeholder="הערות נוספות, בקשה מיוחדת, סגנון וכדומה"></textarea>
-            </div>
+              <div id="vipNotice" class="special-service-notice" style="display:none;"><div class="special-service-box"><strong>לתספורת VIP נדרש תיאום מראש.</strong><p>יש לבצע תיאום מראש בוואטסאפ לפני השלמת ההזמנה.</p><button type="button" id="vipWhatsappBtn" class="btn btn-whatsapp btn-full">תיאום מראש לתספורת VIP</button></div></div>
+              <div id="homeVisitNotice" class="special-service-notice" style="display:none;"><div class="special-service-box"><strong>להגעה לבית הלקוח נדרש תיאום מראש.</strong><p>יש לבצע תיאום מראש בוואטסאפ לפני השלמת ההזמנה.</p><button type="button" id="homeVisitWhatsappBtn" class="btn btn-whatsapp btn-full">תיאום מראש להגעה לבית הלקוח</button></div></div>
 
-            <button type="submit" class="btn btn-primary btn-full">
-              <i class="fa-solid fa-check"></i>
-              <span>שמור תור</span>
-            </button>
+              <div class="form-row">
+                <div class="form-group"><label for="fullName">שם מלא</label><input type="text" id="fullName" name="fullName" placeholder="השם שלך" required /></div>
+                <div class="form-group"><label for="phone">טלפון</label><input type="tel" id="phone" name="phone" placeholder="055-687-3544" maxlength="12" inputmode="numeric" required /></div>
+              </div>
 
-            <button type="button" id="sendWhatsappBtn" class="btn btn-whatsapp btn-full">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>שלח בוואטסאפ</span>
-            </button>
+<div class="form-group">
+  <label for="date">תאריך</label>
 
-            <div id="formMessage" class="form-message" aria-live="polite"></div>
-          </form>
+  <div id="bookingWindowMessage" class="booking-window-message"></div>
+
+  <div id="availabilitySummary" class="availability-summary">
+    <div class="availability-summary-box">
+      <strong>ימים פתוחים</strong>
+      <div id="openDaysList" class="availability-days-list"></div>
+    </div>
+
+    <div class="availability-summary-box">
+      <strong>ימים סגורים</strong>
+      <div id="closedDaysList" class="availability-days-list"></div>
+    </div>
+  </div>
+
+  <input type="hidden" id="date" name="date" required />
+
+<div class="calendar-box">
+  <div class="calendar-selected-line" id="calendarSelectedLine">בחר תאריך</div>
+
+  <div class="calendar-head">
+    <button type="button" id="calendarPrev" class="calendar-nav-btn">‹</button>
+    <div id="calendarMonthLabel" class="calendar-month-label"></div>
+    <button type="button" id="calendarNext" class="calendar-nav-btn">›</button>
+  </div>
+
+  <div class="calendar-weekdays">
+    <div>א</div>
+    <div>ב</div>
+    <div>ג</div>
+    <div>ד</div>
+    <div>ה</div>
+    <div>ו</div>
+    <div>ש</div>
+  </div>
+
+  <div id="calendarGrid" class="calendar-grid"></div>
+</div>
+
+  <div id="dateStatusMessage" class="date-status-message"></div>
+</div>
+
+              <div class="form-group"><label for="time">שעה</label><select id="time" name="time" required><option value="">בחר שעה</option></select></div>
+              <div class="form-group"><label for="notes">הערות</label><textarea id="notes" name="notes" placeholder="אפשר להשאיר הערה קצרה"></textarea></div>
+              <div class="form-group submit-group"><button type="submit" id="submitBookingBtn" class="btn btn-primary btn-full">שמור תור</button></div>
+              <div id="formMessage" class="form-message"></div>
+            </form>
+          </div>
+
+          <aside class="info-panel">
+            <div class="info-card"><div class="info-card-header"><h3>תספורות רגילות</h3></div><ul class="info-list"><li><span>תספורת ראש</span><span class="info-price">70 ₪</span></li><li><span>תספורת ראש+זקן</span><span class="info-price">80 ₪</span></li></ul></div>
+            <div class="info-card premium"><div class="info-card-header"><h3>שירותים בתיאום מראש</h3></div><ul class="info-list"><li><span>תספורת VIP</span><span class="info-price">100 ₪</span></li><li><span>הגעה לבית הלקוח</span><span class="info-price">200 ₪</span></li></ul></div>
+            <div class="info-card contact-card"><h3>יצירת קשר מהירה</h3><p>לשאלות, תיאום VIP או הגעה לבית הלקוח:</p><div class="contact-actions"><a href="tel:0556873544" class="phone-badge">055-687-3544</a><a href="https://wa.me/972556873544" target="_blank" rel="noopener" id="sendWhatsappBtn" class="btn btn-whatsapp btn-full">שלח וואטסאפ</a></div></div>
+          </aside>
         </div>
-
-        <aside class="info-panel reveal">
-          <div class="info-card">
-            <h3>שעות עבודה לדוגמה</h3>
-            <ul class="info-list">
-              <li>ראשון - חמישי: 10:00 עד 20:00</li>
-              <li>שישי: 09:00 עד 15:00</li>
-              <li>שבת: סגור</li>
-            </ul>
-          </div>
-
-          <div class="info-card">
-            <h3>מה חשוב לדעת</h3>
-            <ul class="info-list">
-              <li>לא ניתן לקבוע שעה שכבר נתפסה</li>
-              <li>התורים נשמרים במכשיר</li>
-              <li>אפשר למחוק תור מהרשימה למטה</li>
-            </ul>
-          </div>
-
-          <div class="info-card premium">
-            <h3>Yair Oz</h3>
-            <p>מספרה עם סטייל נקי, גישה מקצועית וחוויית שירות מדויקת.</p>
-          </div>
-        </aside>
       </div>
     </section>
 
-    <section class="section" id="myAppointments">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            התורים שלי
-          </span>
-          <h2 class="section-title">רשימת התורים שנשמרו</h2>
-          <p class="section-subtitle">
-            כל תור שתשמור יוצג כאן אוטומטית.
-          </p>
-        </div>
-
-        <div id="appointmentsList" class="appointments-list reveal">
-          <div class="empty-state">
-            <i class="fa-regular fa-calendar"></i>
-            <p>עדיין לא נשמרו תורים.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="cta-box reveal">
-          <h2>רוצה ליצור קשר ישירות?</h2>
-          <p>
-            אפשר להתקשר או לשלוח הודעת וואטסאפ ישירות מתוך האפליקציה.
-          </p>
-
-          <div class="cta-actions">
-            <a class="btn btn-primary" href="tel:0500000000">
-              <i class="fa-solid fa-phone"></i>
-              <span>התקשר עכשיו</span>
-            </a>
-
-            <a
-              class="btn btn-whatsapp"
-              href="https://wa.me/972500000000?text=%D7%A9%D7%9C%D7%95%D7%9D%20Yair%20Oz%2C%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8"
-              target="_blank"
-              rel="noopener"
-            >
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>שלח הודעה בוואטסאפ</span>
-            </a>
-          </div>
-
-          <div class="phone-badge">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <span>050-0000000</span>
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="cta-box">
+          <div class="cta-content">
+            <h2>צריך תיאום מהיר?</h2>
+            <p>ל־VIP, הגעה לבית הלקוח או שאלה כללית — אפשר לפנות ישירות בוואטסאפ או בטלפון.</p>
+            <div class="cta-actions"><a href="tel:0556873544" class="phone-badge phone-badge-lg">055-687-3544</a><a href="https://wa.me/972556873544" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">וואטסאפ</a></div>
           </div>
         </div>
       </div>
@@ -333,28 +215,17 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-main">
-        <strong>Yair Oz</strong>
-        <span>קביעת תורים למספרה</span>
-        <span>טלפון: 050-0000000</span>
-      </div>
-      <div class="footer-copy">
-        © <span id="year"></span> כל הזכויות שמורות
-      </div>
+    <div class="footer-container">
+      <div class="footer-main"><div class="footer-brand"><div class="brand-mark brand-mark-sm">YO</div><strong>Yair Oz Barber</strong></div><span class="footer-tagline">קביעת תורים בלבד</span></div>
+      <div class="footer-copy">© <span id="year"></span> כל הזכויות שמורות</div>
     </div>
   </footer>
 
-  <a
-    class="floating-wa"
-    href="https://wa.me/972500000000?text=%D7%A9%D7%9C%D7%95%D7%9D%20Yair%20Oz%2C%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8"
-    target="_blank"
-    rel="noopener"
-    aria-label="פתיחת וואטסאפ"
-  >
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  <a class="floating-wa" href="https://wa.me/972556873544" target="_blank" rel="noopener" aria-label="וואטסאפ">WA</a>
 
-  <script src="app.js"></script>
+  <script src="https://unpkg.com/convex@latest/dist/browser.bundle.js"></script>
+  <script src="/app.js?v=70"></script>
+  <script src="/service-cards.js?v=33"></script>
 </body>
 </html>
+
